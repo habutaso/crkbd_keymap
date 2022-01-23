@@ -21,6 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "keymap_jp.h"
 
 #define KC_CAD LALT(LCTL(KC_DEL))
+#define KC_SCST LGUI(LSFT(JP_S)) // windows screenshot key bind
 
 enum custom_keycodes {
 	M_ENJP,
@@ -70,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_F12,  KC_F10,   KC_F9,   KC_F8,   KC_F7,   KC_F6,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_PSCR, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX,  KC_CAD,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      KC_PSCR, RGB_HUD, RGB_SAD, RGB_VAD, KC_SCST,  KC_CAD,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                            KC_SPC,  KC_ENT, KC_LSFT,    KC_LALT, _______, _______
                                       //`--------------------------'  `--------------------------'
